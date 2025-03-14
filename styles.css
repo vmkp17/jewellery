@@ -1,0 +1,197 @@
+/* 🌟 Global Styling - High-End Look */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0D0D0D; /* Deep black for luxury */
+    color: #F5E6C8; /* Soft Champagne Gold */
+    overflow-x: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Hero Section - Classy & High-End */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('luxury-bg.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 15px gold;
+    animation: backInDown 1.5s ease-in-out;
+}
+
+.subtitle {
+    font-size: 1.7rem;
+    margin: 15px 0;
+    text-shadow: 1px 1px 10px #C79C60;
+}
+
+/* 💎 Luxury Buttons */
+.buttons {
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: 2px solid gold;
+    color: gold;
+    background: transparent;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    color: #000;
+    background: linear-gradient(135deg, gold, #D4AF37);
+    box-shadow: 0px 0px 25px gold;
+    transform: scale(1.1);
+}
+
+/* 🌟 Scrolling Jewelry Showcase */
+.scrolling-images {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px 0;
+    animation: scroll 15s linear infinite;
+}
+
+.scrolling-images img {
+    height: 220px;
+    margin: 0 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.scrolling-images img:hover {
+    transform: scale(1.3) rotate(5deg);
+}
+
+/* ✨ Product Sections - Luxury Feel */
+.luxury-section {
+    padding: 50px 10%;
+}
+
+.split-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.split-item {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.split-item img {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.split-item:hover img {
+    transform: scale(1.15);
+}
+
+/* 🔥 Fade-in Effect on Scroll */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-in-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 🏆 Keyframes - Smooth High-End Feel */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes backInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 📱 Responsive Design - Mobile & Tablet */
+@media (max-width: 992px) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .split-container {
+        flex-direction: column;
+    }
+
+    .split-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

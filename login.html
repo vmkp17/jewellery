@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="login-popup" id="loginPopup">
+        <div class="login-container">
+            <h2>Luxury Login</h2>
+            <p>Enter your details to continue shopping</p>
+            <input type="text" id="userName" placeholder="Full Name" required>
+            <input type="tel" id="userPhone" placeholder="Phone Number" required>
+            <input type="email" id="userEmail" placeholder="Email" required>
+            <button onclick="submitLogin()">Continue</button>
+            <p class="close-btn" onclick="closeLogin()">X</p>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
