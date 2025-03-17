@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>silver Jewelry Collection</title>
+    <link rel="stylesheet" href="mendiamond.css">
+    <script defer src="mendiamond.js"></script>
+    
+
+<script src="login.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="search-box" placeholder="Search men's gold jewelry...">
+        <ul class="suggestions" id="suggestions"></ul>
+    </div>
+
+
+    <!-- Hero Section -->
+    <div class="category-hero">
+        <div class="overlay"></div>
+        <div class="category-content">
+            <h1 class="category-title">men  Jewelry Collection</h1>
+            <p class="category-subtitle">Timeless euiytfdghjkljhgbvcbnjkl;</p>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <section class="products">
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="gold-bangle.jpg" alt="Gold bangle" class="zoom">
+                <h3>Gold bangle</h3>
+                <p class="price">$499</p>
+                <button class="add-to-cart" onclick="addToCart('Gold Ring', 499)">Add to Cart</button>
+                <button class="like-btn" onclick="addToWishlist('Gold Ring', 'gold-ring.jpg', 499)">❤️ Like</button>
+                <button class="share-btn" onclick="shareProduct('Gold Ring', 'gold-ring.jpg')">🔗 Share</button>
+            </div>
+
+            <div class="product-card">
+                <img src="gold-chain.jpg" alt="Gold Chain" class="zoom">
+                <h3>Gold Chain</h3>
+                <p class="price">$1299</p>
+                <button class="add-to-cart" onclick="addToCart('Gold Chain', 1299)">Add to Cart</button>
+                <button class="like-btn" onclick="addToWishlist('Gold Chain', 'gold-chain.jpg', 1299)">❤️ Like</button>
+                <button class="share-btn" onclick="shareProduct('Gold Chain', 'gold-chain.jpg')">🔗 Share</button>
+            </div>
+
+            <div class="product-card">
+                <img src="gold-bracelet.jpg" alt="Gold Bracelet" class="zoom">
+                <h3>Gold Bracelet</h3>
+                <p class="price">$699</p>
+                <button class="add-to-cart" onclick="addToCart('Gold Bracelet', 699)">Add to Cart</button>
+                <button class="like-btn" onclick="addToWishlist('Gold Bracelet', 'gold-bracelet.jpg', 699)">❤️ Like</button>
+                <button class="share-btn" onclick="shareProduct('Gold Bracelet', 'gold-bracelet.jpg')">🔗 Share</button>
+            </div>
+
+            <div class="product-card">
+                <img src="gold-cufflinks.jpg" alt="Gold Cufflinks" class="zoom">
+                <h3>Gold Cufflinks</h3>
+                <p class="price">$299</p>
+                <button class="add-to-cart" onclick="addToCart('Gold Cufflinks', 299)">Add to Cart</button>
+                <button class="like-btn" onclick="addToWishlist('Gold Cufflinks', 'gold-cufflinks.jpg', 299)">❤️ Like</button>
+                <button class="share-btn" onclick="shareProduct('Gold Cufflinks', 'gold-cufflinks.jpg')">🔗 Share</button>
+            </div>
+
+            <div class="product-card">
+                <img src="gold-watch.jpg" alt="Gold Watch" class="zoom">
+                <h3>Gold Watch</h3>
+                <p class="price">$1499</p>
+                <button class="add-to-cart" onclick="addToCart('Gold Watch', 1499)">Add to Cart</button>
+                <button class="like-btn" onclick="addToWishlist('Gold Watch', 'gold-watch.jpg', 1499)">❤️ Like</button>
+                <button class="share-btn" onclick="shareProduct('Gold Watch', 'gold-watch.jpg')">🔗 Share</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Wishlist Section -->
+    <section class="wishlist">
+        <h2>💖 Your Wishlist</h2>
+        <div id="wishlist-container"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Luxury Jewelry. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

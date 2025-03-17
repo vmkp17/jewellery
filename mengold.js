@@ -4,14 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const noResults = document.getElementById("no-results");
     const products = document.querySelectorAll(".product-card");
     const wishlistContainer = document.getElementById("wishlist-container");
-
-
-    // Pre-trained Men's Gold Jewelry Keywords
-    const jewelryKeywords = [
-        "gold ring", "gold chain", "gold bracelet", "gold cufflinks", "gold watch",
-        "gold pendant", "gold necklace", "gold earrings", "gold kada", "gold studs",
-        "gold signet ring", "gold tie clip", "gold lapel pin", "gold brooch"
-    ];
+    // Pre-trained Jewelry Keywords
+    const jewelryKeywords = ["ring", "bracelet", "earrings", "necklace", "pendant", "gold chain", "bangle", "watch"];
 
     // Live search function
     searchBox.addEventListener("keyup", () => {
@@ -52,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        suggestionsBox.innerHTML = suggestions.map(item => <li>${item}</li>).join("");
+        suggestionsBox.innerHTML = suggestions.map(item => `<li>${item}</li>`).join("");
         suggestionsBox.style.display = "block";
 
         // Click on suggestion to autofill search box
@@ -75,8 +69,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+ {
 
-{
+
     function updateWishlistUI() {
         wishlistContainer.innerHTML = "";
         const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
@@ -93,9 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
     }
-
-
-    
 
     window.addToWishlist = function (name, image, price) {
         let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
