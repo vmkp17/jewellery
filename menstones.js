@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const products = document.querySelectorAll(".product-card");
     const wishlistContainer = document.getElementById("wishlist-container");
     // Pre-trained Jewelry Keywords
-    const jewelryKeywords = ["ring", "bracelet", "earrings", "necklace", "pendant", "gold chain", "bangle", "watch"];
+    const jewelryKeywords = ["ring", "bracelet", "earrings", "necklace", "pendant", "gold chain", "bangle", "watch", "Tiger's Eye Ring","Lapis Lazuli Bracelet","Ruby Pendant","Emerald Cufflinks","Smoky Quartz Ring",
+        "Amethyst Chain","Peridot Bracelet","Citrine Pendant","Zircon Cufflinks","Garnet Ring"];
 
     // Live search function
     searchBox.addEventListener("keyup", () => {

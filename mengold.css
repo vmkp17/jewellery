@@ -34,6 +34,16 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
+
+category title {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 15px gold;
+    animation: backInDown 1.5s ease-in-out;
+}
+
 /* Glowing Effect on Focus */
 #search-box:focus {
     border-color: #ffd700;
