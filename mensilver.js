@@ -113,3 +113,13 @@ document.addEventListener("DOMContentLoaded", () => {
     updateWishlistUI();
 }
 
+function checkLoginBeforeCart(productName, price) {
+    let isLoggedIn = localStorage.getItem("loggedInUser");
+
+    if (!isLoggedIn) {
+        alert("Please log in to continue.");
+        window.location.href = `login.html?redirect=cart&product=${productName}&price=${price}`;
+    } else {
+        addToCart(productName, price);
+    }
+}
