@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const products = document.querySelectorAll(".product-card");
     const wishlistContainer = document.getElementById("wishlist-container");
     // Pre-trained Jewelry Keywords
-    const jewelryKeywords = ["ring", "bracelet", "earrings", "necklace", "pendant", "chain", "bangle", "watch"];
+    const jewelryKeywords = ["ring", "bracelet", "earrings", "necklace", "pendant", "gold chain", "bangle", "watch"];
 
     // Live search function
     searchBox.addEventListener("keyup", () => {
@@ -111,4 +111,15 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     updateWishlistUI();
+}
+
+function checkLoginBeforeCart(productName, price) {
+    let isLoggedIn = localStorage.getItem("loggedInUser");
+
+    if (!isLoggedIn) {
+        alert("Please log in to continue.");
+        window.location.href = `login.html?redirect=cart&product=${productName}&price=${price}`;
+    } else {
+        addToCart(productName, price);
+    }
 }
