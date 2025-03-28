@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const products = document.querySelectorAll(".product-card");
     const wishlistContainer = document.getElementById("wishlist-container");
     // Pre-trained Jewelry Keywords
-    const jewelryKeywords = ["ring", "bracelet", "earrings", "necklace", "pendant", "gold chain", "bangle", "watch","cufflinks"];
+    const jewelryKeywords = ["ring", "bracelet", "earrings", "pendant", "gold chain", "bangle", "watch","cufflinks"];
 
     // Live search function
     searchBox.addEventListener("keyup", () => {
