@@ -137,7 +137,7 @@ body {
 
 .add-to-cart {
     padding: 10px;
-    background: #B76E79;
+    background: #DCC6E0;
     border: none;
     cursor: pointer;
     font-size: 1rem;
@@ -146,11 +146,11 @@ body {
 }
 
 .add-to-cart:hover {
-    background:  #B76E79;
+    background:  #d4af37;
 }
 
 .like-btn, .share-btn {
-    background-color:  #B76E79;
+    background-color:  #DCC6E0;
     border: none;
     padding: 8px 12px;
     margin: 5px;
@@ -160,11 +160,11 @@ body {
 }
 
 .like-btn:hover {
-    background-color: #B76E79;
+    background-color: #d4af37;
 }
 
 .share-btn:hover {
-    background-color:  #B76E79;
+    background-color:  #DCC6E0;
 }
 
 .wishlist {
@@ -192,7 +192,7 @@ body {
 
 /* Highlight Matching Products */
 .product-card.highlight {
-    background: #B76E79;
+    background: #DCC6E0;
     color: #111;
 }
 
