@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="mendiamond.css">
     <script defer src="mendiamond.js"></script>
     
+    <a href="cart.html" class="cart-button">🛒 Cart</a>
+    <a href="login.html" id="login-btn" class="top-btn">Login</a>
 
 <script src="login.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
@@ -37,7 +39,7 @@
                 <img src="dp.jpg" alt="Pendent" class="zoom">
                 <h3>Pendent</h3>
                 <p class="price">$499</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Ring', 'gold-ring.jpg', 499)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Ring', 'gold-ring.jpg')">🔗 Share</button>
             </div>
@@ -46,7 +48,7 @@
                 <img src="dc.jpg" alt="Double Chain" class="zoom">
                 <h3>Double Chain</h3>
                 <p class="price">$1299</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Chain', 'gold-chain.jpg', 1299)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Chain', 'gold-chain.jpg')">🔗 Share</button>
             </div>
@@ -55,7 +57,7 @@
                 <img src="db.jpg" alt="Bracelet" class="zoom">
                 <h3>Bracelet</h3>
                 <p class="price">$699</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Bracelet', 'gold-bracelet.jpg', 699)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Bracelet', 'gold-bracelet.jpg')">🔗 Share</button>
             </div>
@@ -64,7 +66,7 @@
                 <img src="diacuff.jpg" alt="Cufflinks" class="zoom">
                 <h3>Cufflinks</h3>
                 <p class="price">$299</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Cufflinks', 'gold-cufflinks.jpg', 299)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Cufflinks', 'gold-cufflinks.jpg')">🔗 Share</button>
             </div>
@@ -73,7 +75,7 @@
                 <img src="dwatch.jpg" alt="Analogue Watch" class="zoom">
                 <h3>Analogue Watch</h3>
                 <p class="price">$1499</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Watch', 'gold-watch.jpg', 1499)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Watch', 'gold-watch.jpg')">🔗 Share</button>
             </div>
@@ -82,7 +84,7 @@
                 <img src="dcwatch.jpg" alt="Classic Watch" class="zoom">
                 <h3>Classic Watch</h3>
                 <p class="price">$1999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Classic Watch', 'md_watch1.jpg', 1999)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Classic Watch', 'md_watch1.jpg')">🔗 Share</button>
             </div>
@@ -91,7 +93,7 @@
                 <img src="dchwatch.jpg" alt="Chronograph Watch" class="zoom">
                 <h3>Chronograph Watch</h3>
                 <p class="price">$2499</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Chronograph Watch', 'md_watch2.jpg', 2499)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Chronograph Watch', 'md_watch2.jpg')">🔗 Share</button>
             </div>
@@ -100,7 +102,7 @@
                 <img src="scuff.jpg" alt="Cufflinks" class="zoom">
                 <h3>Cufflinks</h3>
                 <p class="price">$799</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Classic Cufflinks', 'md_cufflink1.jpg', 799)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Classic Cufflinks', 'md_cufflink1.jpg')">🔗 Share</button>
             </div>
@@ -109,7 +111,7 @@
                 <img src="ddcuff.jpg" alt="Designer Cufflinks" class="zoom">
                 <h3>Designer Cufflinks</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'md_cufflink2.jpg', 999)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'md_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -118,7 +120,7 @@
                 <img src="cd.jpg" alt="Celtic Ring" class="zoom">
                 <h3>Celtic Ring</h3>
                 <p class="price">$1199</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Celtic Ring', 'md_ring5.jpg', 1199)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Celtic Ring', 'md_ring5.jpg')">🔗 Share</button>
             </div>
@@ -127,7 +129,7 @@
                 <img src="db1.jpg" alt="Bracelet" class="zoom">
                 <h3>Bracelet</h3>
                 <p class="price">$699</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Bracelet', 'gold-bracelet.jpg', 699)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Bracelet', 'gold-bracelet.jpg')">🔗 Share</button>
             </div>
@@ -136,7 +138,7 @@
                 <img src="dc1.jpg" alt="Cufflinks" class="zoom">
                 <h3>Cufflinks</h3>
                 <p class="price">$299</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Cufflinks', 'gold-cufflinks.jpg', 299)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Cufflinks', 'gold-cufflinks.jpg')">🔗 Share</button>
             </div>
@@ -145,7 +147,7 @@
                 <img src="db2.jpg" alt="Bracelet" class="zoom">
                 <h3>Bracelet</h3>
                 <p class="price">$899</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Bracelet', 'md_bracelet.jpg', 899)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Bracelet', 'md_bracelet.jpg')">🔗 Share</button>
             </div>
@@ -154,7 +156,7 @@
                 <img src="db3.jpg" alt="Classic Bracelet" class="zoom">
                 <h3>Classic Bracelet</h3>
                 <p class="price">$1099</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Classic Bracelet', 'md_bracelet1.jpg', 1099)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Classic Bracelet', 'md_bracelet1.jpg')">🔗 Share</button>
             </div>
@@ -163,7 +165,7 @@
                 <img src="db4.jpg" alt="Bracelet" class="zoom">
                 <h3>Bracelet</h3>
                 <p class="price">$899</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Bracelet', 'md_bracelet.jpg', 899)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Bracelet', 'md_bracelet.jpg')">🔗 Share</button>
             </div>
@@ -172,7 +174,7 @@
                 <img src="dc2.jpg" alt="Cuban Link Bracelet" class="zoom">
                 <h3>Cuban Link Bracelet</h3>
                 <p class="price">$1299</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Cuban Link Bracelet', 'md_bracelet2.jpg', 1299)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Cuban Link Bracelet', 'md_bracelet2.jpg')">🔗 Share</button>
             </div>
@@ -181,7 +183,7 @@
                 <img src="dr.jpg" alt="Rope Bracelet" class="zoom">
                 <h3>Rope Bracelet</h3>
                 <p class="price">$1399</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Rope Bracelet', 'md_bracelet3.jpg', 1399)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Rope Bracelet', 'md_bracelet3.jpg')">🔗 Share</button>
             </div>
@@ -190,7 +192,7 @@
                 <img src="dbox.jpg" alt="Box Bracelet" class="zoom">
                 <h3>Box Bracelet</h3>
                 <p class="price">$1499</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Box Bracelet', 'md_bracelet4.jpg', 1499)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Box Bracelet', 'md_bracelet4.jpg')">🔗 Share</button>
             </div>
@@ -199,7 +201,7 @@
                 <img src="dring.jpg" alt="Ring" class="zoom">
                 <h3>Ring</h3>
                 <p class="price">$499</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Ring', 'md_ring.jpg', 499)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Ring', 'md_ring.jpg')">🔗 Share</button>
             </div>
@@ -208,7 +210,7 @@
                 <img src="dk.jpg" alt="Kada" class="zoom">
                 <h3>Kada</h3>
                 <p class="price">$1599</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Kada', 'md_kada.jpg', 1599)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Kada', 'md_kada.jpg')">🔗 Share</button>
             </div>
@@ -217,7 +219,7 @@
                 <img src="df.jpg" alt="Figaro Chain" class="zoom">
                 <h3>Figaro Chain</h3>
                 <p class="price">$1699</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Figaro Chain', 'md_chain5.jpg', 1699)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Figaro Chain', 'md_chain5.jpg')">🔗 Share</button>
             </div>
@@ -226,7 +228,7 @@
                 <img src="dc3.jpg" alt="Designer Cufflinks" class="zoom">
                 <h3>Designer Cufflinks</h3>
                 <p class="price">$999</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'md_cufflink2.jpg', 999)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'md_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -235,7 +237,7 @@
                 <img src="cd1.jpg" alt="Celtic Ring" class="zoom">
                 <h3>Celtic Ring</h3>
                 <p class="price">$1199</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Celtic Ring', 'md_ring5.jpg', 1199)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Celtic Ring', 'md_ring5.jpg')">🔗 Share</button>
             </div>
@@ -244,7 +246,7 @@
                 <img src="dk1.jpg" alt="Kada" class="zoom">
                 <h3>Kada</h3>
                 <p class="price">$1599</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Kada', 'md_kada.jpg', 1599)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Kada', 'md_kada.jpg')">🔗 Share</button>
             </div>
@@ -253,7 +255,7 @@
                 <img src="db5.jpg" alt="Bracelet" class="zoom">
                 <h3>Bracelet</h3>
                 <p class="price">$699</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Bracelet', 'gold-bracelet.jpg', 699)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Bracelet', 'gold-bracelet.jpg')">🔗 Share</button>
             </div>
@@ -262,7 +264,7 @@
                 <img src="dc4.jpg" alt="Cufflinks" class="zoom">
                 <h3>Cufflinks</h3>
                 <p class="price">$299</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Cufflinks', 'gold-cufflinks.jpg', 299)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Cufflinks', 'gold-cufflinks.jpg')">🔗 Share</button>
             </div>
@@ -272,7 +274,7 @@
                 <img src="dp1.jpg" alt="Pendant" class="zoom">
                 <h3>Pendant</h3>
                 <p class="price">$699</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Pendant', 'md_pendant.jpg', 699)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Pendant', 'md_pendant.jpg')">🔗 Share</button>
             </div>
@@ -281,7 +283,7 @@
                 <img src="ring2.jpg" alt="Classic Ring" class="zoom">
                 <h3>Classic Ring</h3>
                 <p class="price">$899</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Classic Ring', 'md_ring1.jpg', 899)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Classic Ring', 'md_ring1.jpg')">🔗 Share</button>
             </div>
@@ -290,7 +292,7 @@
                 <img src="ds.jpg" alt="Signet Ring" class="zoom">
                 <h3>Signet Ring</h3>
                 <p class="price">$1099</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Signet Ring', 'md_ring2.jpg', 1099)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Signet Ring', 'md_ring2.jpg')">🔗 Share</button>
             </div>
@@ -299,7 +301,7 @@
                 <img src="ring3.jpg" alt="Band Ring" class="zoom">
                 <h3>Band Ring</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Band Ring', 'md_ring3.jpg', 999)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Band Ring', 'md_ring3.jpg')">🔗 Share</button>
             </div>
@@ -308,7 +310,7 @@
                 <img src="bd.jpg" alt="Box Chain" class="zoom">
                 <h3>Box Chain</h3>
                 <p class="price">$1599</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Box Chain', 'md_chain4.jpg', 1599)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Box Chain', 'md_chain4.jpg')">🔗 Share</button>
             </div>
@@ -318,7 +320,7 @@
                 <img src="dt.jpg" alt="Thin Cufflinks" class="zoom">
                 <h3>Thin Cufflinks</h3>
                 <p class="price">$299</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Cufflinks', 'gold-cufflinks.jpg', 299)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Cufflinks', 'gold-cufflinks.jpg')">🔗 Share</button>
             </div>
@@ -327,7 +329,7 @@
                 <img src="db6.jpg" alt="Bracelet" class="zoom">
                 <h3>Bracelet</h3>
                 <p class="price">$899</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Bracelet', 'md_bracelet.jpg', 899)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Bracelet', 'md_bracelet.jpg')">🔗 Share</button>
             </div>
@@ -336,7 +338,7 @@
                 <img src="df1.jpg" alt="Figaro Bracelet" class="zoom">
                 <h3>Figaro Bracelet</h3>
                 <p class="price">$1599</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Figaro Bracelet', 'md_bracelet5.jpg', 1599)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Figaro Bracelet', 'md_bracelet5.jpg')">🔗 Share</button>
             </div>
@@ -345,7 +347,7 @@
                 <img src="cd2.jpg" alt="Chain" class="zoom">
                 <h3>Chain</h3>
                 <p class="price">$1299</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Chain', 'md_chain.jpg', 1299)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Chain', 'md_chain.jpg')">🔗 Share</button>
             </div>
@@ -355,7 +357,7 @@
                 <img src="ring4.jpg" alt="Classic Ring" class="zoom">
                 <h3>Classic Ring</h3>
                 <p class="price">$899</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Classic Ring', 'md_ring1.jpg', 899)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Classic Ring', 'md_ring1.jpg')">🔗 Share</button>
             </div>
@@ -364,7 +366,7 @@
                 <img src="ring5.jpg" alt="Ring" class="zoom">
                 <h3>Ring</h3>
                 <p class="price">$499</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Ring', 'md_ring.jpg', 499)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Ring', 'md_ring.jpg')">🔗 Share</button>
             </div>
@@ -373,7 +375,7 @@
                 <img src="db7.jpg" alt="Bracelet" class="zoom">
                 <h3>Bracelet</h3>
                 <p class="price">$899</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Bracelet', 'md_bracelet.jpg', 899)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Bracelet', 'md_bracelet.jpg')">🔗 Share</button>
             </div>
@@ -382,7 +384,7 @@
                 <img src="de.jpg" alt="Earrings" class="zoom">
                 <h3>Earrings</h3>
                 <p class="price">$699</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Earrings', 'md_earrings.jpg', 699)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Earrings', 'md_earrings.jpg')">🔗 Share</button>
             </div>
@@ -391,7 +393,7 @@
                 <img src="dc5.jpg" alt="Diamond Cufflinks" class="zoom">
                 <h3>Diamond Cufflinks</h3>
                 <p class="price">$899</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Diamond Cufflinks', 'md_diamond_cufflinks.jpg', 3299)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Diamond Cufflinks', 'md_diamond_cufflinks.jpg')">🔗 Share</button>
             </div>
@@ -400,7 +402,7 @@
                 <img src="db8.jpg" alt="Black Diamond Bracelet" class="zoom">
                 <h3>Black Diamond Bracelet</h3>
                 <p class="price">$3999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Black Diamond Bracelet', 'md_black_diamond_bracelet.jpg', 3999)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Black Diamond Bracelet', 'md_black_diamond_bracelet.jpg')">🔗 Share</button>
             </div>
@@ -409,7 +411,7 @@
                 <img src="ring6.jpg" alt="Diamond Ring" class="zoom">
                 <h3>Diamond Ring</h3>
                 <p class="price">$4999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Diamond Ring', 'md_diamond_ring.jpg', 4999)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Diamond Ring', 'md_diamond_ring.jpg')">🔗 Share</button>
             </div>
@@ -418,7 +420,7 @@
                 <img src="dp2.jpg" alt="Pendant" class="zoom">
                 <h3>Pendant</h3>
                 <p class="price">$599</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold Necklace', '249.99', 'images/gold-necklace.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Pendant', 'md_pendant.jpg', 599)">❤ Like</button>
                 <button class="share-btn" onclick="shareProduct('Pendant', 'md_pendant.jpg')">🔗 Share</button>
             </div>
