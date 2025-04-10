@@ -24,6 +24,10 @@ body {
     right: 20px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+.cart-button:hover {
+    background-color: #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
 .top-btn {
     display: inline-block;
     margin: 10px;
