@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="wdiamond.css">
     <script defer src="wdiamond.js"></script>
     
+    <a href="cart.html" class="cart-button">🛒 Cart</a>
+    <a href="login.html" id="login-btn" class="top-btn">Login</a>
 
 <script src="login.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
@@ -38,7 +40,7 @@
                 <img src="wb.jpg" alt="Classic Diamond Bangle" class="zoom">
                 <h3>Diamond Bangle</h3>
                 <p class="price">$799</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Classic Cufflinks', 'mp_cufflink1.jpg', 799)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Classic Cufflinks', 'mp_cufflink1.jpg')">🔗 Share</button>
             </div>
@@ -46,7 +48,7 @@
                 <img src="wb1.jpg" alt="Designer Diamond Bangle" class="zoom">
                 <h3>Diamond Bangle</h3>
                 <p class="price">$799</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Classic Cufflinks', 'mp_cufflink1.jpg', 799)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Classic Cufflinks', 'mp_cufflink1.jpg')">🔗 Share</button>
             </div>
@@ -54,7 +56,7 @@
                 <img src="wb2.jpg" alt="Hinged Diamond Bangle" class="zoom">
                 <h3>Diamond Bangle</h3>
                 <p class="price">$799</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Classic Cufflinks', 'mp_cufflink1.jpg', 799)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Classic Cufflinks', 'mp_cufflink1.jpg')">🔗 Share</button>
             </div>
@@ -62,7 +64,7 @@
                 <img src="wb3.jpg" alt="Antique Diamond Bangle" class="zoom">
                 <h3>Diamond Bangle</h3>
                 <p class="price">$799</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Classic Cufflinks', 'mp_cufflink1.jpg', 799)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Classic Cufflinks', 'mp_cufflink1.jpg')">🔗 Share</button>
             </div>
@@ -70,7 +72,7 @@
                 <img src="wb4.jpg" alt="Temple-inspired Diamond Bangle" class="zoom">
                 <h3>Diamond Bangle</h3>
                 <p class="price">$799</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Classic Cufflinks', 'mp_cufflink1.jpg', 799)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Classic Cufflinks', 'mp_cufflink1.jpg')">🔗 Share</button>
             </div>
@@ -78,7 +80,7 @@
                 <img src="wb5.jpg" alt="Twisted Diamond Bangle" class="zoom">
                 <h3>Diamond Bangle</h3>
                 <p class="price">$799</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Classic Cufflinks', 'mp_cufflink1.jpg', 799)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Classic Cufflinks', 'mp_cufflink1.jpg')">🔗 Share</button>
             </div>
@@ -86,7 +88,7 @@
                 <img src="wb6.jpg" alt="Filigree Diamond Bangle" class="zoom">
                 <h3>Diamond Bangle</h3>
                 <p class="price">$799</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Classic Cufflinks', 'mp_cufflink1.jpg', 799)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Classic Cufflinks', 'mp_cufflink1.jpg')">🔗 Share</button>
             </div>
@@ -94,7 +96,7 @@
                 <img src="wr.jpg" alt="Solitaire Diamond Ring" class="zoom">
                 <h3>Diamond Ring</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -102,7 +104,7 @@
                 <img src="wr1.jpg" alt="Halo Diamond Ring" class="zoom">
                 <h3>Diamond Ring</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -110,7 +112,7 @@
                 <img src="wr2.jpg" alt="Three-Stone Diamond Ring" class="zoom">
                 <h3>Diamond Ring</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -118,7 +120,7 @@
                 <img src="wr3.jpg" alt="Hidden Halo Ring" class="zoom">
                 <h3>Diamond Ring</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -126,7 +128,7 @@
                 <img src="wr4.jpg" alt="Celtic Ring" class="zoom">
                 <h3>Celtic Ring</h3>
                 <p class="price">$1199</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Celtic Ring', 'mp_ring5.jpg', 1199)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Celtic Ring', 'mp_ring5.jpg')">🔗 Share</button>
             </div>
@@ -134,7 +136,7 @@
                 <img src="wr5.jpg" alt="Eternity Ring" class="zoom">
                 <h3>Diamond Ring</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -142,7 +144,7 @@
                 <img src="wr6.jpg" alt="Cluster Diamond Ring" class="zoom">
                 <h3>Diamond Ring</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -150,7 +152,7 @@
                 <img src="wr7.jpg" alt="Infinity Diamond Ring" class="zoom">
                 <h3>Diamond Ring</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -158,7 +160,7 @@
                 <img src="wr8.jpg" alt="Dual-stone Diamond Ring" class="zoom">
                 <h3>Diamond Ring</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -166,7 +168,7 @@
                 <img src="wp.jpg" alt="Pendant Diamond Necklace" class="zoom">
                 <h3>Diamond Necklace</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -174,7 +176,7 @@
                 <img src="wn.jpg" alt="Lariat Diamond Necklace" class="zoom">
                 <h3>Diamond Necklace</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -182,7 +184,7 @@
                 <img src="wn1.jpg" alt="Choker Diamond Necklace" class="zoom">
                 <h3>Diamond Necklace</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -190,7 +192,7 @@
                 <img src="wn2.jpg" alt="Multi-Layer Diamond Necklace" class="zoom">
                 <h3>Diamond Necklace</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -198,7 +200,7 @@
                 <img src="wn3.jpg" alt="Matinee Diamond Necklace" class="zoom">
                 <h3>Diamond Necklace</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -206,7 +208,7 @@
                 <img src="wn4.jpg" alt="Opera Diamond Necklace" class="zoom">
                 <h3>Diamond Necklace</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -214,7 +216,7 @@
                 <img src="wn5.jpg" alt="Bid Diamond Necklace" class="zoom">
                 <h3>Diamond Necklace</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -222,7 +224,7 @@
                 <img src="wn6.jpg" alt="Collar Diamond Necklace" class="zoom">
                 <h3>Diamond Necklace</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -230,7 +232,7 @@
                 <img src="wn7.jpg" alt=" Festoon Diamond Necklace" class="zoom">
                 <h3>Diamond Necklace</h3>
                 <p class="price">$999</p>
-                <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Designer Cufflinks', 'mp_cufflink2.jpg', 999)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Designer Cufflinks', 'mp_cufflink2.jpg')">🔗 Share</button>
             </div>
@@ -238,7 +240,7 @@
                 <img src="wd.jpg" alt="Tennis Diamond Bracelet" class="zoom">
                 <h3>Diamond Bracelet</h3>
                 <p class="price">$699</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Bracelet', 'gold-bracelet.jpg', 699)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Bracelet', 'gold-bracelet.jpg')">🔗 Share</button>
             </div>
@@ -246,7 +248,7 @@
                 <img src="wd1.jpg" alt="Cuff Diamond Bracelet" class="zoom">
                 <h3>Diamond Bracelet</h3>
                 <p class="price">$699</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Bracelet', 'gold-bracelet.jpg', 699)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Bracelet', 'gold-bracelet.jpg')">🔗 Share</button>
             </div>
@@ -254,7 +256,7 @@
                 <img src="wd2.jpg" alt="Charm Diamond Bracelet" class="zoom">
                 <h3>Diamond Bracelet</h3>
                 <p class="price">$699</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Bracelet', 'gold-bracelet.jpg', 699)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Bracelet', 'gold-bracelet.jpg')">🔗 Share</button>
             </div>
@@ -262,7 +264,7 @@
                 <img src="wd3.jpg" alt="Charm Diamond Bracelet" class="zoom">
                 <h3>Diamond Bracelet</h3>
                 <p class="price">$699</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Bracelet', 'gold-bracelet.jpg', 699)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Bracelet', 'gold-bracelet.jpg')">🔗 Share</button>
             </div>
@@ -270,7 +272,7 @@
                 <img src="wd4.jpg" alt="Infinity Diamond Bracelet" class="zoom">
                 <h3>Diamond Bracelet</h3>
                 <p class="price">$699</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Bracelet', 'gold-bracelet.jpg', 699)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Bracelet', 'gold-bracelet.jpg')">🔗 Share</button>
             </div>
@@ -278,7 +280,7 @@
                 <img src="wd5.jpg" alt="Layered Diamond Bracelet" class="zoom">
                 <h3>Diamond Bracelet</h3>
                 <p class="price">$699</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Bracelet', 'gold-bracelet.jpg', 699)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Bracelet', 'gold-bracelet.jpg')">🔗 Share</button>
             </div>
@@ -286,7 +288,7 @@
                 <img src="wd6.jpg" alt="Floral Diamond Bracelet" class="zoom">
                 <h3>Diamond Bracelet</h3>
                 <p class="price">$699</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Bracelet', 'gold-bracelet.jpg', 699)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Bracelet', 'gold-bracelet.jpg')">🔗 Share</button>
             </div>
@@ -294,7 +296,7 @@
                 <img src="wc.jpg" alt="Classic Diamond Cufflinks" class="zoom">
                 <h3> Diamond Cufflinks</h3>
                 <p class="price">$299</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Cufflinks', 'gold-cufflinks.jpg', 299)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Cufflinks', 'gold-cufflinks.jpg')">🔗 Share</button>
             </div>
@@ -302,7 +304,7 @@
                 <img src="wc1.jpg" alt="Chain-link Diamond Cufflinks" class="zoom">
                 <h3> Diamond Cufflinks</h3>
                 <p class="price">$299</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Cufflinks', 'gold-cufflinks.jpg', 299)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Cufflinks', 'gold-cufflinks.jpg')">🔗 Share</button>
             </div>
@@ -310,7 +312,7 @@
                 <img src="wc2.jpg" alt="Knot Diamond Cufflinks" class="zoom">
                 <h3> Diamond Cufflinks</h3>
                 <p class="price">$299</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Cufflinks', 'gold-cufflinks.jpg', 299)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Cufflinks', 'gold-cufflinks.jpg')">🔗 Share</button>
             </div>
@@ -318,7 +320,7 @@
                 <img src="wc3.jpg" alt="Bar Diamond Cufflinks" class="zoom">
                 <h3> Diamond Cufflinks</h3>
                 <p class="price">$299</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Cufflinks', 'gold-cufflinks.jpg', 299)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Cufflinks', 'gold-cufflinks.jpg')">🔗 Share</button>
             </div>
@@ -326,7 +328,7 @@
                 <img src="wc4.jpg" alt="Art-deco Diamond Cufflinks" class="zoom">
                 <h3> Diamond Cufflinks</h3>
                 <p class="price">$299</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Cufflinks', 'gold-cufflinks.jpg', 299)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Cufflinks', 'gold-cufflinks.jpg')">🔗 Share</button>
             </div>
@@ -334,7 +336,7 @@
                 <img src="wc6.jpg" alt="Button Diamond Cufflinks" class="zoom">
                 <h3> Diamond Cufflinks</h3>
                 <p class="price">$299</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Cufflinks', 'gold-cufflinks.jpg', 299)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Cufflinks', 'gold-cufflinks.jpg')">🔗 Share</button>
             </div>
@@ -342,7 +344,7 @@
                 <img src="wc5.jpg" alt="Toggle Diamond Cufflinks" class="zoom">
                 <h3> Diamond Cufflinks</h3>
                 <p class="price">$299</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Cufflinks', 'gold-cufflinks.jpg', 299)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Cufflinks', 'gold-cufflinks.jpg')">🔗 Share</button>
             </div>
@@ -350,7 +352,7 @@
                 <img src="wc7.jpg" alt="il-Knot Diamond CuSfflinks" class="zoom">
                 <h3> Diamond Cufflinks</h3>
                 <p class="price">$299</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Cufflinks', 'gold-cufflinks.jpg', 299)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Cufflinks', 'gold-cufflinks.jpg')">🔗 Share</button>
             </div>
@@ -358,7 +360,7 @@
                 <img src="ww.jpg" alt="Watch" class="zoom">
                 <h3>Diamond Watch</h3>
                 <p class="price">$1499</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Watch', 'gold-watch.jpg', 1499)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Watch', 'gold-watch.jpg')">🔗 Share</button>
             </div>
@@ -366,7 +368,7 @@
                 <img src="ww1.jpg" alt="Vintage Diamond Watch" class="zoom">
                 <h3>Diamond Watch</h3>
                 <p class="price">$1499</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Watch', 'gold-watch.jpg', 1499)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Watch', 'gold-watch.jpg')">🔗 Share</button>
             </div>
@@ -374,7 +376,7 @@
                 <img src="ww2.jpg" alt="Skeleton Diamond Watch" class="zoom">
                 <h3>Diamond Watch</h3>
                 <p class="price">$1499</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Watch', 'gold-watch.jpg', 1499)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Watch', 'gold-watch.jpg')">🔗 Share</button>
             </div>
@@ -382,7 +384,7 @@
                 <img src="ww3.jpg" alt="Swiss Diamond Watch" class="zoom">
                 <h3>Diamond Watch</h3>
                 <p class="price">$1499</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Watch', 'gold-watch.jpg', 1499)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Watch', 'gold-watch.jpg')">🔗 Share</button>
             </div>
@@ -390,7 +392,7 @@
                 <img src="ww4.jpg" alt="Dual-Time Watch" class="zoom">
                 <h3>Diamond Watch</h3>
                 <p class="price">$1499</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Watch', 'gold-watch.jpg', 1499)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Watch', 'gold-watch.jpg')">🔗 Share</button>
             </div>
@@ -398,7 +400,7 @@
                 <img src="ww5.jpg" alt="Mesh band Diamond Watch" class="zoom">
                 <h3>Diamond Watch</h3>
                 <p class="price">$1499</p>
-                 <button class="add-to-cart" onclick="checkLoginBeforeCart('Pendant', 599)">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart('Gold chain', '1299','chain.jpg')">Add to Cart</button>
                 <button class="like-btn" onclick="addToWishlist('Gold Watch', 'gold-watch.jpg', 1499)">❤️ Like</button>
                 <button class="share-btn" onclick="shareProduct('Gold Watch', 'gold-watch.jpg')">🔗 Share</button>
             </div>
