@@ -1,15 +1,34 @@
-function checkLoginBeforeCart(productName, price) {
-    let isLoggedIn = localStorage.getItem("loggedInUser"); // Check if user is logged in
+document.addEventListener('DOMContentLoaded', () => {
+    // Check if the user is already logged in
+    let isLoggedIn = localStorage.getItem("loggedInUser");
 
-    if (!isLoggedIn) {
-        alert("Please log in to continue.");
-        window.location.href = "login.html"; // Redirect to login page
-    } else {
-        addToCart(productName, price);
+    if (isLoggedIn) {
+        alert("You are already logged in.");
+        // Redirect back to the product page after successful login
+        window.location.href = "product_page.html"; // Adjust this to your product page URL
     }
+});
+
+// Handle login form submission
+function handleLogin(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get user data from the form
+    const userName = document.getElementById("userName").value;
+    const userPhone = document.getElementById("userPhone").value;
+    const userEmail = document.getElementById("userEmail").value;
+
+    // Store user information in local storage
+    localStorage.setItem("loggedInUser", JSON.stringify({ userName, userPhone, userEmail }));
+
+    // Alert the user about successful login
+    alert("Login Successful. Welcome to the Luxury Jewelry Store!");
+
+    // Redirect to the product page
+    window.location.href = "product_page.html"; // Adjust this to your product page URL
 }
 
-function addToCart(productName, price) {
-    alert(`${productName} added to cart for ₹${price}`);
-    // Your cart logic here
+// Close the login popup
+function closeLogin() {
+    window.location.href = "product_page.html"; // Redirect to the product page if the login is closed without logging in
 }
