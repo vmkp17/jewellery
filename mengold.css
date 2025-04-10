@@ -148,7 +148,7 @@ category title {
 
 .add-to-cart {
     padding: 10px;
-    background: #d4af37;
+    background: #DCC6E0;
     border: none;
     cursor: pointer;
     font-size: 1rem;
@@ -157,11 +157,11 @@ category title {
 }
 
 .add-to-cart:hover {
-    background: #c79c60;
+    background: #d4af37;
 }
 
 .like-btn, .share-btn {
-    background-color: #f8d210;
+    background-color: #DCC6E0;
     border: none;
     padding: 8px 12px;
     margin: 5px;
@@ -171,11 +171,11 @@ category title {
 }
 
 .like-btn:hover {
-    background-color: #ff4d4d;
+    background-color: #d4af37;
 }
 
 .share-btn:hover {
-    background-color: #00aaff;
+    background-color: #d4af37;
 }
 
 .wishlist {
@@ -203,6 +203,6 @@ category title {
 
 /* Highlight Matching Products */
 .product-card.highlight {
-    background: #d4af37;
+    background: #DCC6E0;
     color: #111;
 } 
