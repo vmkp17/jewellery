@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .checkout-container {
+    background-color: #111;
+    border: 2px solid gold;
+    border-radius: 20px;
+    box-shadow: 0 0 20px gold;
+    padding: 30px;
+    width: 350px;
+    animation: slideIn 1s ease-out;
+  }
+  
+  h2 {
+    text-align: center;
+    color: gold;
+    margin-bottom: 20px;
+  }
+  
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+  }
+  
+  .discount {
+    color: #00ff88;
+  }
+  
+  .total {
+    font-weight: bold;
+    font-size: 18px;
+    color: gold;
+  }
+  
+  .free {
+    color: #00ff00;
+  }
+  
+  .offer-msg {
+    background-color: #222;
+    border: 1px solid green;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    color: lightgreen;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  
+  .cancel-btn,
+  .place-order-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cancel-btn {
+    background-color: #333;
+    color: white;
+    border: 1px solid red;
+  }
+  
+  .place-order-btn {
+    background-color: gold;
+    color: black;
+    box-shadow: 0 0 10px gold;
+  }
+  
+  .cancel-btn:hover {
+    background-color: red;
+  }
+  
+  .place-order-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff0;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(80px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .toast-msg {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: 1px solid gold;
+    font-size: 14px;
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 9999;
+  }
+  
+  .toast-msg.show {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+  

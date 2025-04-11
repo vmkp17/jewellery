@@ -10,6 +10,23 @@
     <a href="cart.html" class="cart-button">🛒 Cart</a>
     <a href="login.html" id="login-btn" class="top-btn">Login</a>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const user = JSON.parse(localStorage.getItem("loggedInUser"));
+            const profileContainer = document.getElementById("profile-container");
+        
+            if (user && profileContainer) {
+                profileContainer.innerHTML = `
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src="profile_icon.png" alt="Profile" style="width: 30px; height: 30px; border-radius: 50%;">
+                        <span style="color: white;">${user.userName}</span>
+                    </div>
+                `;
+            }
+        });
+        </script>
+        
+        
 
 <script src="login.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">

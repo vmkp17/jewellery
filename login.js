@@ -2,11 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check if the user is already logged in
     let isLoggedIn = localStorage.getItem("loggedInUser");
 
-    if (isLoggedIn) {
-        alert("You are already logged in.");
-        // Redirect back to the product page after successful login
-        window.location.href = "product_page.html"; // Adjust this to your product page URL
-    }
+
 });
 
 // Handle login form submission
@@ -25,10 +21,10 @@ function handleLogin(event) {
     alert("Login Successful. Welcome to the Luxury Jewelry Store!");
 
     // Redirect to the product page
-    window.location.href = "product_page.html"; // Adjust this to your product page URL
+    window.location.href = "checkout.html"; // Adjust this to your product page URL
 }
 
 // Close the login popup
 function closeLogin() {
-    window.location.href = "product_page.html"; // Redirect to the product page if the login is closed without logging in
+    window.location.href = "checkout.html"; // Redirect to the product page if the login is closed without logging in
 }
