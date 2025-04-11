@@ -56,4 +56,17 @@ body {
     margin-top: 20px;
     color: gray;
   }
+  .cart-item-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .cart-item-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 1px solid gold;
+    border-radius: 10px;
+  }
   

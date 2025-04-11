@@ -6,19 +6,19 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 const cartItemsContainer = document.getElementById('cart-items');
 const emptyCartMessage = document.getElementById('empty-cart');
 
-// Save cart back to localStorage
+// Save updated cart to localStorage
 function saveCart() {
   localStorage.setItem('cart', JSON.stringify(cart));
 }
 
-// Remove an item by index
+// Remove item by index
 function removeItem(index) {
   cart.splice(index, 1);
   saveCart();
   renderCart();
 }
 
-// Render all cart items with remove buttons
+// Render the cart items
 function renderCart() {
   cartItemsContainer.innerHTML = '';
 
@@ -34,14 +34,17 @@ function renderCart() {
     itemDiv.classList.add('cart-item');
 
     itemDiv.innerHTML = `
-      <span>${item.name} - $${item.price}</span>
+      <div class="cart-item-left">
+        <img src="${item.image}" alt="${item.name}" class="cart-item-img">
+        <span>${item.name} - $${item.price}</span>
+      </div>
       <button data-index="${index}">Remove</button>
     `;
 
     cartItemsContainer.appendChild(itemDiv);
   });
 
-  // Attach remove button listeners
+  // Add remove button functionality
   const removeButtons = document.querySelectorAll('.cart-item button');
   removeButtons.forEach(button => {
     button.addEventListener('click', function () {
@@ -51,5 +54,5 @@ function renderCart() {
   });
 }
 
-// Initial render on page load
+// Initial render
 renderCart();

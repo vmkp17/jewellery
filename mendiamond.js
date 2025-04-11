@@ -123,3 +123,24 @@ function checkLoginBeforeCart(productName, price) {
         addToCart(productName, price);
     }
 }
+function addToCart(name, price, image) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Optional: prevent duplicates
+    cart.push({ name, price, image });
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert(`${name} has been added to your cart!`);
+}
+document.addEventListener("DOMContentLoaded", () => {
+    const loginBtn = document.getElementById("login-btn");
+    const isLoggedIn = localStorage.getItem("loggedInUser");
+
+    if (isLoggedIn) {
+        loginBtn.textContent = "Logged In";
+        loginBtn.href = "#";
+        loginBtn.style.pointerEvents = "none";
+        loginBtn.style.opacity = "0.6";
+        loginBtn.title = "You are already logged in";
+    }
+});
